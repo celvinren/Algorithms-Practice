@@ -52,28 +52,6 @@ var threeSum = function (nums) {
     }
 
     return arr;
-
-
-
-
-
-    // for (let x = 0; x < nums.length; x++) {
-    //     for (let y = x + 1; y < nums.length; y++) {
-    //         for (let z = y + 1; z < nums.length; z++) {
-    //             var total = nums[x] + nums[y] + nums[z];
-    //             if (total == 0) {
-    //                 arr.push(nums[x] + "###" + nums[y] + "###" + nums[z])
-    //             }
-    //         }
-    //     }
-    // }
-    // var arr2 = [...new Set(arr)];
-    // var result = [];
-    // for (let i = 0; i < arr2.length; i++) {
-    //     var arr3 = arr2[i].split('###')
-    //     result.push(arr3);
-    // }
-    // return result;
 };
 //console.log(threeSum([-1, 0, 1, 2, -1, -4]))
 console.log(threeSum([3, 0, -2, -1, 1, 2]))

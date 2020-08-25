@@ -13,18 +13,18 @@ return [0, 1].
  * @param {*} target 
  */
 var twoSum = function (nums, target) {
-    var i;
-    var j;
-    for (i = 0; i < nums.length; i++) {
-        for (j = i + 1; j < nums.length; j++) {
-            var n = nums[i] + nums[j];
-            if (n == target) {
-                return [i, j];
-            }
-        }
-    }
+    // var i;
+    // var j;
+    // for (i = 0; i < nums.length; i++) {
+    //     for (j = i + 1; j < nums.length; j++) {
+    //         var n = nums[i] + nums[j];
+    //         if (n == target) {
+    //             return [i, j];
+    //         }
+    //     }
+    // }
 
-    //////////////////////
+    // //////////////////////
     var i;
     var j = -1;
     for (i = 0; i < nums.length; i++) {
@@ -36,4 +36,5 @@ var twoSum = function (nums, target) {
     }
 };
 console.log(twoSum([2, 7, 11, 15], 9))
+console.log(twoSum([3, 2, 4], 9))
 
